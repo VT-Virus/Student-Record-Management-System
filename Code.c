@@ -402,7 +402,7 @@ void readdata()
 	fclose(fp);
 }
 
-// merge and merge sort
+// merge function
 void merge(srec newstudent[],int start, int mid, int end)
 {
     int a,b,k=0;
@@ -445,7 +445,7 @@ void merge(srec newstudent[],int start, int mid, int end)
 }
 
 
-
+// mergesort   O(NLogN)
 void mergesort(srec newstudent[],int start, int end )
 {
     int mid;
