@@ -371,6 +371,7 @@ void updateStudent()
 
 }
 
+// read data from file
 void readdata()
 {
 	srec rec = {0};
@@ -401,6 +402,7 @@ void readdata()
 	fclose(fp);
 }
 
+// merge and merge sort
 void merge(srec newstudent[],int start, int mid, int end)
 {
     int a,b,k=0;
@@ -458,7 +460,7 @@ void mergesort(srec newstudent[],int start, int end )
     }
 }
 
-
+// grade list generator in both ouput and file
 void generatemarklist()
 {
 	readdata();
